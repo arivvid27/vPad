@@ -1,0 +1,51 @@
+# .gitignore for CircuitPython / UF2 firmware projects
+# Keeps firmware images, build artifacts, editor/OS files and caches out of git
+
+# Firmware images
+*.uf2
+*.bin
+*.hex
+*.elf
+*.zip
+
+# Compiled/micro-optimized Python modules
+*.mpy
+.mpy-cross/
+
+# Build / distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# Python cache and virtualenv
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editor directories
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.log
+
+# Local environment / secrets
+.env
+env/
+.venv/
+venv/
+pyproject.toml
+uv.lock
+.python-version
+
+# CircuitPython / project specific temp files
+secrets.py
+.
